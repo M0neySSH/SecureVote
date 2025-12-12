@@ -1,0 +1,29 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v7.2.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 244 modules transformed.
+[31m✗[39m Build failed in 2.51s
+[31merror during build:
+[31msrc/pages/Verify.jsx (3:9): "CONTRACT_ADDRESS" is not exported by "src/contractConfig.js", imported by "src/pages/Verify.jsx".[31m
+file: [36mD:/voting2.0/frontend/src/pages/Verify.jsx:3:9[31m
+[33m
+1: import React, { useState } from 'react';
+2: import { ethers } from 'ethers';
+3: import { CONTRACT_ADDRESS, ABI } from '../contractConfig';
+            ^
+4: 
+5: function Verify() {
+[31m
+    at getRollupError (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:16956:16)
+    at Module.traceVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:17412:29)
+    at ModuleScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:15076:39)
+    at FunctionScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at FunctionBodyScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at ReturnValueScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at FunctionBodyScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)
+    at BlockScope.findVariable (file:///D:/voting2.0/frontend/node_modules/rollup/dist/es/shared/node-entry.js:5649:38)[39m

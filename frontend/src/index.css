@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gray-100: #f3f4f6;
+  --color-gray-900: #111827;
+}
+
+/* Custom Utilities if needed */
+
+@layer base {
+  body {
+    @apply text-gray-100 transition-colors duration-200;
+    background-color: #111827;
+    /* Default to Dark Mode */
+  }
+
+  :root.dark body {
+    @apply text-gray-100;
+    background-color: #111827;
+  }
+}
