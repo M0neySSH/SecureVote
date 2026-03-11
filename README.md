@@ -77,10 +77,3 @@ A secure, transparent, and decentralized voting application built on the Ethereu
     # In 'frontend' folder
     npm run dev
     ```
-
-## 📝 How to Add Images to this README
-
-1.  Create a folder named `screenshots` or `assets` in this directory.
-2.  Add your image files (e.g., `dashboard.png`, `vote.png`) to that folder.
-3.  Update the image links in this file like this:
-    `![Description](screenshots/dashboard.png)`
